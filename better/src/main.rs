@@ -43,11 +43,28 @@ fn main() {
     name.push_str("@theBashShell");
 
     println!("{}", name);
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{}, world!", s2);
+    let s = String::from("bruno");
+    let i = 80;
+
+    own(s);
+    own1(i);
+    // println!("{}", s);
+    println!("{}", i);
 }
 
 
 
+fn own(s : String) {
+    println!("I OWN {}", s);
+}
 
+fn own1(i : i8) {
+    println!("{}", i);
+}
 
 
 

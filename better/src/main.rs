@@ -38,7 +38,28 @@ fn main() {
 
     println!("{}", add_two(3, 30));
     say(10);
+
+    let mut name = String::from("bruno");
+    name.push_str("@theBashShell");
+
+    println!("{}", name);
 }
+
+
+
+
+
+
+
+/////////////////////////
+
+
+
+
+
+
+
+
 
 fn fun_now() {
     println!("wow!!!")

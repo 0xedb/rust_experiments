@@ -22,14 +22,31 @@ fn main() {
     let array: [i32; 3] = [1, 2, 3];
     let arr = [0; 3];
 
+    let y = {
+        let x = 2;
+        x + 2
+    };
     println!(
         "You guessed: {}--{}::{}, {} {} {}",
         num, PI, a, tup.0, array[2], arr[2]
     );
 
+
     fun_now();
+    tell_age(30);
+    println!("{}", y);
+
+    println!("{}", add_two(3, 30));
 }
 
 fn fun_now() {
-    print!("wow!!!");
+    println!("wow!!!")
+}
+
+fn tell_age(age: u8) {
+    println!("{}", age);
+}
+
+fn add_two(x : i8, y : i8) -> i8 {
+    x + y
 }

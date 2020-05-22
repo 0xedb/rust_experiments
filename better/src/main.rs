@@ -37,6 +37,7 @@ fn main() {
     println!("{}", y);
 
     println!("{}", add_two(3, 30));
+    say(10);
 }
 
 fn fun_now() {
@@ -49,4 +50,17 @@ fn tell_age(age: u8) {
 
 fn add_two(x : i8, y : i8) -> i8 {
     x + y
+}
+
+
+fn say(i : i16) {
+    if i > 10 {
+        println!("greater than 10");
+    } 
+    else if i == 10 {
+        println!("TEN!!");
+    }
+    else {
+        println!("greater than 10");
+    }
 }

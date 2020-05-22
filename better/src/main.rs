@@ -26,4 +26,10 @@ fn main() {
         "You guessed: {}--{}::{}, {} {} {}",
         num, PI, a, tup.0, array[2], arr[2]
     );
+
+    fun_now();
+}
+
+fn fun_now() {
+    print!("wow!!!");
 }

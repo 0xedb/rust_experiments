@@ -14,7 +14,14 @@ fn main() {
         age: 10
     };
 
+    let mut anon = Human {
+        name : String::from("anon"),
+        age: 101
+    };
+
+    anon.name = String::from("agessss");
     println!("{} {}", bruno.name, bruno.age);
+    println!("{} {}", anon.age, anon.name);
 }
 
 

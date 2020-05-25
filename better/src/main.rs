@@ -4,7 +4,17 @@ fn main() {
     let c : i8 = 33;
     own(&mut name, c);
 
-    println!("{} {}", name, c);
+    struct Human {
+        name : String,
+        age : i128
+    }
+
+    let bruno = Human {
+        name : String::from("edoh"),
+        age: 10
+    };
+
+    println!("{} {}", bruno.name, bruno.age);
 }
 
 

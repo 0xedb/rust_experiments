@@ -9,6 +9,8 @@ fn main() {
         age : i128
     }
 
+    struct Color(i8, i8);
+
     let bruno = Human {
         name : String::from("edoh"),
         age: 10
@@ -19,9 +21,12 @@ fn main() {
         age: 101
     };
 
+    let color = Color(10,120);
+
     anon.name = String::from("agessss");
     println!("{} {}", bruno.name, bruno.age);
     println!("{} {}", anon.age, anon.name);
+    println!("{} {}", color.0, color.1);
 }
 
 

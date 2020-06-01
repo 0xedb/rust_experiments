@@ -10,6 +10,7 @@ fn main() {
     println!("{}", add_two(10, 39));
 
     println!("{}", checker(99));
+    println!("{} here", looper(3));
 }
 
 fn add_two(first : i16, second : i16) -> i16 {
@@ -24,4 +25,15 @@ fn checker(num : i8) -> i8 {
     };
 
     y
+}
+
+fn looper(mut num: i8) -> i8 {
+    loop {
+        println!("{}", num);
+        num = num + 1;
+
+        if num == 20 {
+            break num
+        }
+    }
 }
